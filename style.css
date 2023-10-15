@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+   --black:#000;
+   --white:#ffffff;
+   --lightgrey:#f1f1f1;
+   --darkblue:#0d102c;
+   --primarycolor:#3d51f2;
+   --secondarycolor:#5670ef;
+   --lightDark:#080A25;
+   --darkText:#8388B4;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--darkblue);
+    color: var(--white);
+}
+
+.faq{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 2em;
+    display: grid;
+    gap: 60px;
+}
+
+.faq_question{
+    border-bottom: 1px solid var(--darkText);
+    transition: all 1s ease-in-out;
+    margin-bottom: .5em;
+}
+
+.faq_desc h1{
+    font-size: 2.5em;
+    margin-bottom: .5em;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    padding: 1em 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.answer{
+    line-height: 1.8em;
+    padding-bottom: 1.5em;
+    display: none;
+}
+
+.showAnswer{
+    display: block;
+}
+
+
+@media screen and (min-width:900px) {
+    .faq{
+        grid-template-columns: 1fr 1fr;
+    }
+}
